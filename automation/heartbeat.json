@@ -1,0 +1,41 @@
+{
+  "service": "machine-learning-models",
+  "status": "healthy",
+  "timestamp": "2024-10-27T10:30:00Z",
+  "uptime_seconds": 3600,
+  "version": "1.2.3",
+  "dependencies": {
+    "database": {
+      "status": "healthy",
+      "response_time_ms": 15
+    },
+    "model_registry": {
+      "status": "healthy",
+      "version": "2.0"
+    }
+  },
+  "resource_usage": {
+    "cpu_percent": 10.5,
+    "memory_mb": 512,
+    "disk_space_gb": 20.2
+  },
+  "endpoints": [
+    {
+      "name": "predict",
+      "status": "healthy",
+      "requests_per_minute": 60
+    },
+    {
+      "name": "train",
+      "status": "idle"
+    }
+  ],
+  "build_info": {
+    "git_commit": "a1b2c3d4e5f6",
+    "build_date": "2024-10-26T18:00:00Z"
+  },
+  "metadata": {
+    "environment": "production",
+    "region": "us-west-2"
+  }
+}
